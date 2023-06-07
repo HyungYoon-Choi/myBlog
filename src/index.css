@@ -1,10 +1,21 @@
 body {
     margin: 0;
+    padding-top: 145px;
 }
 
 /* Header */
 header {
     border-bottom: 1px solid #898f9c;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+p.fw-bold {
+    margin-bottom: 8px;
 }
 
 .sns-icons {
@@ -34,4 +45,19 @@ header {
 
 .kakaotalk {
     color: #ffe812;
+}
+
+.h5.card-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.h5.card-title small span {
+    font-size: .8em;
+    color: #999;
+    margin-right: 10px;
+}
+
+.h5.card-title small {
+    margin-left: 18px;
 }
