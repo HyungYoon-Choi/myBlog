@@ -4,6 +4,7 @@ body {
 }
 
 /* Header */
+
 header {
     border-bottom: 1px solid #898f9c;
     background-color: rgba(255, 255, 255, 0.8);
@@ -47,11 +48,6 @@ p.fw-bold {
     color: #ffe812;
 }
 
-.h5.card-title {
-    font-size: 15px;
-    font-weight: 600;
-}
-
 .h5.card-title small span {
     font-size: .8em;
     color: #999;
@@ -60,4 +56,29 @@ p.fw-bold {
 
 .h5.card-title small {
     margin-left: 18px;
+}
+
+.btnbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.fw-bold a {
+    color: #000;
+    text-decoration: none;
 }

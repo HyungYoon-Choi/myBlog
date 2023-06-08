@@ -1,22 +1,24 @@
 import React from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 
-const Post = () => {
+const Post = ({ id, writer, img, categorya, categoryb, title, content, wdate }) => {
     return (
         <Col md={4} className='mb-5'>
             <Card>
-                <Card.Img variant='top' src='./images/b-01.jpg' alt='b-01' />
+                <Card.Img variant='top' src={img} alt={img} />
                 <Card.Body>
-                    <Card.Title>바그다드 여행
+                    <Card.Title>{id}. {title} <br />
                         <small>
-                            <span>중동</span>
-                            <span>무전여행</span>
+                            <span>{categorya}</span>
+                            <span>{categoryb}</span>
                         </small>
                     </Card.Title>
                     <Card.Text>
-                        여행 이야기
+                        {content} {wdate}
                     </Card.Text>
-                    <Button variant="dark">바로가기</Button>
+                    <div className="btnbox">{writer}
+                        <Button variant="dark">바로가기</Button>
+                    </div>
                 </Card.Body>
             </Card>
         </Col>

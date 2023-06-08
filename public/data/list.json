@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "writer": "주인장",
+        "img": "images/b-02.jpg",
+        "categorya": "미국",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    },
+    {
+        "id": 2,
+        "writer": "주인장",
+        "img": "images/b-03.jpg",
+        "categorya": "이탈리아",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    },
+    {
+        "id": 3,
+        "writer": "주인장",
+        "img": "images/b-04.jpg",
+        "categorya": "네덜란드",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    },
+    {
+        "id": 4,
+        "writer": "주인장",
+        "img": "images/b-05.jpg",
+        "categorya": "영국",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    },
+    {
+        "id": 5,
+        "writer": "주인장",
+        "img": "images/b-06.jpg",
+        "categorya": "프랑스",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    },
+    {
+        "id": 6,
+        "writer": "주인장",
+        "img": "images/b-07.jpg",
+        "categorya": "독일",
+        "categoryb": "배낭여행",
+        "title": "무작정 떠난 배낭여행",
+        "content": "배낭여행 다니지 말자. 힘들고 괴롭다!",
+        "wdate": "2022-12-17"
+    }
+]

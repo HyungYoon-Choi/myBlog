@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Aside from './Aside';
 import Post from './Post';
 import { Container, Row } from 'react-bootstrap';
 import Slider from './Slider';
+import axios from 'axios';
 
 const Containers = styled.div`
     max-width: 100%;
@@ -21,6 +22,15 @@ const Posts = styled.div`
 `;
 
 const Home = () => {
+
+    const [mylist, setMylist] = useState([]);
+    useEffect(() => {
+        axios.get('./data/list.json')
+            .then(res => {
+                setMylist(res.data);
+            })
+    }, []);
+
     return (
         <>
             <Slider />
@@ -28,12 +38,21 @@ const Home = () => {
                 <Posts>
                     <Container>
                         <Row className='my-5'>
-                            <Post />
-                            <Post />
-                            <Post />
-                            <Post />
-                            <Post />
-                            <Post />
+                            {
+                                mylist.map((list, index) => (
+                                    <Post
+                                        id={list.id}
+                                        writer={list.writer}
+                                        img={list.img}
+                                        categorya={list.categorya}
+                                        categoryb={list.categoryb}
+                                        title={list.title}
+                                        content={list.content}
+                                        wdate={list.wdate}
+                                        key={index}
+                                    />
+                                ))
+                            }
                         </Row>
                     </Container>
                 </Posts>
